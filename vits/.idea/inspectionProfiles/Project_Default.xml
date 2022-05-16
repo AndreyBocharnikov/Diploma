@@ -1,0 +1,37 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="24">
+            <item index="0" class="java.lang.String" itemvalue="tgt" />
+            <item index="1" class="java.lang.String" itemvalue="numba" />
+            <item index="2" class="java.lang.String" itemvalue="scipy" />
+            <item index="3" class="java.lang.String" itemvalue="scikit-learn" />
+            <item index="4" class="java.lang.String" itemvalue="g2p-en" />
+            <item index="5" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="6" class="java.lang.String" itemvalue="unidecode" />
+            <item index="7" class="java.lang.String" itemvalue="torch" />
+            <item index="8" class="java.lang.String" itemvalue="numpy" />
+            <item index="9" class="java.lang.String" itemvalue="tqdm" />
+            <item index="10" class="java.lang.String" itemvalue="tensorboard" />
+            <item index="11" class="java.lang.String" itemvalue="soundfile" />
+            <item index="12" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="13" class="java.lang.String" itemvalue="inflect" />
+            <item index="14" class="java.lang.String" itemvalue="librosa" />
+            <item index="15" class="java.lang.String" itemvalue="pyworld" />
+            <item index="16" class="java.lang.String" itemvalue="pypinyin" />
+            <item index="17" class="java.lang.String" itemvalue="tensorflow" />
+            <item index="18" class="java.lang.String" itemvalue="Unidecode" />
+            <item index="19" class="java.lang.String" itemvalue="pillow" />
+            <item index="20" class="java.lang.String" itemvalue="sounddevice" />
+            <item index="21" class="java.lang.String" itemvalue="hydra_core" />
+            <item index="22" class="java.lang.String" itemvalue="hydra_colorlog" />
+            <item index="23" class="java.lang.String" itemvalue="torchaudio" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

@@ -1,0 +1,60 @@
+sample_rate: 22050
+n_fft: 1024
+hop_length: 256
+n_mels: 80
+
+model:
+  _target_: modules.sk_and_apr_modules.SpeakerClassification
+  n_mels: ${n_mels}
+  n_channels: 128
+  n_classes: 30
+
+optim:
+  _target_: torch.optim.AdamW
+  lr: 0.0001
+  betas: [ 0.8, 0.99 ]
+
+train_cfg:
+  dataset:
+    _target_: datasets.sc_dataset.SCDatset
+    manifest: '/root/storage/TTS/avc/manifests/avc_train_gen_w_predicted_durs.txt'
+    n_frames: 32
+    mel_cfg:
+      sample_rate: ${sample_rate}
+      n_fft: ${n_fft}
+      hop_length: ${hop_length}
+      n_mels: ${n_mels}
+      f_max: 8000
+    speaker_ids_path: '/root/andrey_b/vits/filelists/avc_vctk_speaker_ids.txt'
+
+  dataloader:
+    batch_size: 16
+    num_workers: 4
+    shuffle: True
+
+val_cfg:
+  dataset:
+    _target_: datasets.sc_dataset.SCDatset
+    manifest: '/root/storage/TTS/avc/manifests/speaker_classification_val.txt'
+    n_frames: 32
+    mel_cfg:
+      sample_rate: ${sample_rate}
+      n_fft: ${n_fft}
+      hop_length: ${hop_length}
+      n_mels: ${n_mels}
+      f_max: 8000
+    speaker_ids_path: '/root/andrey_b/vits/filelists/avc_vctk_speaker_ids.txt'
+    speaker_mapping_path: '/root/andrey_b/vits/filelists/avc_vctk_speaker_mapping.txt'
+    val: true
+
+  dataloader:
+    batch_size: 16
+    num_workers: 4
+    shuffle: False
+
+trainer:
+  gpus: 0 # number of gpus
+  max_steps: 500000
+  flush_logs_every_n_steps: 200
+  log_every_n_steps: 100
+  val_check_interval: 0.008

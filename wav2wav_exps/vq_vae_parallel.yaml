@@ -1,0 +1,5 @@
+train_cfg:
+  dataset:
+    _target_: dataset.VQVAEParallel
+    # manifest: '/root/storage/TTS/avc/manifests/avc_train.txt'
+    manifest: '/root/storage/TTS/avc/manifests/avc_train_gen_w_predicted_durs.txt'

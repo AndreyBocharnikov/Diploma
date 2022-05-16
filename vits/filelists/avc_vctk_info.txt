@@ -1,0 +1,30 @@
+1 p225  23  F    English    Southern  England
+2 p226  22  M    English    Surrey
+3 p227  38  M    English    Cumbria
+4 p257  24  F    English    Southern  England
+5 p233  23  F    English    Staffordshire
+6 p236  23  F    English    Manchester
+7 p243  22  M    English    London
+8 p244  22  F    English    Manchester
+9 p267  23  F    English    Yorkshire
+10 p268  23  F    English    Southern  England
+11 p269  20  F    English    Newcastle
+12 p270  21  M    English    Yorkshire
+13 p273  23  M    English    Suffolk
+14 p274  22  M    English    Essex
+15 p276  24  F    English    Oxford
+16 p277  23  F    English    NE  England
+17 p278  22  M    English    Cheshire
+18 p279  23  M    English    Leicester
+19 p286  23  M    English    Newcastle
+20 p287  23  M    English    York
+21 p294  33  F    American  San  Francisco
+22 p299  25  F    American  California
+23 p301  23  F    American  North  Carolina
+24 p362  29  F    American
+25 p334  18  M    American  Chicago
+26 p360  19  M    American  New  Jersey
+27 p311  21  M    American  Iowa
+28 p345  22  M    American  Florida
+29 p248  23  F    Indian
+30 p376  22  M    Indian
